@@ -12,7 +12,7 @@ name: Build OpenWrt npir2s
 
 on:
   schedule:
-    - cron: 0 20 * * *
+    - cron: 0 20 * * 5
   watch:
     types: [started]
 
