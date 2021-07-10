@@ -12,7 +12,7 @@ name: Build OpenWrt rpi4b
 
 on:
   schedule:
-    - cron: 0 16 * * *
+    - cron: 0 16 * * 4
   watch:
     types: [started]
 
