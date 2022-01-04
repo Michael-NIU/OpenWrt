@@ -15,5 +15,8 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-mkdir -p pakage/helloworld && git clone https://github.com/fw876/helloworld package/helloworld
+#mkdir -p pakage/helloworld && git clone https://github.com/fw876/helloworld package/helloworld
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git -C package/helloworld pull
 #mkdir -p pakage/openwrt-passwall && git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
